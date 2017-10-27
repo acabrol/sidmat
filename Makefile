@@ -9,7 +9,7 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/sidmat-$(PKG_VERSION)
 PKG_SOURCE:=master.zip
 PKG_SOURCE_URL:=http://github.com/vmxdev/sidmat/archive/master.zip
 PKG_MD5SUM:=669a573702cba84803bf7e4b2ba60c07
-PKG_CAT:=zcat
+PKG_CAT:=unzip
 
 include $(INCLUDE_DIR)/package.mk
 

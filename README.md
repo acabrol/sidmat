@@ -7,6 +7,9 @@ It can be useful for "domain filtering" or other operations when you need to use
 
 `sidmat` can use pcap or nflog (under Linux) for packet capture.
 
+### OpenWrt Package
+The package is based on documentation https://wiki.openwrt.org/doc/devel/packages
+
 
 ### Compiling
 with pcap as data source:
