@@ -7,15 +7,17 @@ PKG_RELEASE:=1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/sidmat-$(PKG_VERSION)
 PKG_SOURCE:=master.zip
-PKG_SOURCE_URL:=http://github.com/vmxdev/sidmat/archive/master.zip
+PKG_SOURCE_URL:=https://github.com/acabrol/sidmat/archive/master.zip
 PKG_MD5SUM:=669a573702cba84803bf7e4b2ba60c07
 PKG_CAT:=unzip
+MAKE_PATH:=src
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/sidmat
   SECTION:=base
   CATEGORY:=Network
+  DEPENDS:=+libpcap
   TITLE:=Simple DNS matcher
   #DESCRIPTION:=This variable is obsolete. use the Package/name/description define instead!
   URL:=https://github.com/acabrol/sidmat
